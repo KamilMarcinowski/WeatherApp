@@ -16,11 +16,11 @@ window.addEventListener("DOMContentLoaded", function(){
 
     function Start()
     {
-        if (localStorage.getItem("City") === null)
+        if (localStorage.getItem("City") === "")
         {
             city = "Olkusz";
         }
-        else if (localStorage.getItem("City") !== null)
+        else if (localStorage.getItem("City") !== "")
         {
             city = localStorage.getItem("City");
         }
