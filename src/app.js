@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", function(){
 
     function Start()
     {
-        if (localStorage.getItem("City") == null)
+        if (localStorage.getItem("City") === null)
         {
             city = "Olkusz";
         }
