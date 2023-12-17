@@ -12,18 +12,19 @@ window.addEventListener("DOMContentLoaded", function(){
     const api = "a9844ff28b049329fcd0a0c0a50f96c0";
     let city = "Olkusz";
 
+    let cityStatus = false;
+
     Start();
 
     function Start()
     {
-        if (localStorage.getItem("City") === null)
+        if (localStorage.getItem("CityStatus") === false)
         {
-            city = "Olkusz";
+            city = "London";
+            cityStatus = true;
+            localStorage.setItem("CityStatus", cityStatus);
         }
-        else
-        {
-            city = localStorage.getItem("City");
-        }
+
 
         console.log(city);
         GetWeatherData();
