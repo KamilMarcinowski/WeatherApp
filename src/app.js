@@ -16,10 +16,13 @@ window.addEventListener("DOMContentLoaded", function(){
 
     function Start()
     {
-        city = localStorage.getItem("City");
-        if (city === null)
+        if (localStorage.getItem("City") === null)
         {
             city = "Olkusz";
+        }
+        else if (localStorage.getItem("City") !== null)
+        {
+            city = localStorage.getItem("City");
         }
 
         console.log(city);
