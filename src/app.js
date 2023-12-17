@@ -17,11 +17,12 @@ window.addEventListener("DOMContentLoaded", function(){
     function Start()
     {
         city = localStorage.getItem("City");
-        if (city === "")
+        if (city === null)
         {
-            city = "Warsaw";
+            city = "Olkusz";
         }
 
+        console.log(city);
         GetWeatherData();
     }
 

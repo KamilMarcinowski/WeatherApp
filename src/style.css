@@ -16,23 +16,6 @@ body{
     
 }
 
-#search-city{
-    border: none;
-    border-radius: 15px;
-    width: 250px;
-    height: 30px;
-    text-align: center;
-}
-
-#search-button{
-    width: 60px;
-    height: 30px;
-    border: none;
-    border-radius: 15px;
-    transition: .3s ease-in-out;
-    cursor: pointer;
-}
-
 #weather-icon{
     width: 200px;
     height: 200px;
@@ -66,6 +49,23 @@ body{
         top: 100px;
         color: white;
     }
+
+    #search-city{
+        border: none;
+        border-radius: 15px;
+        width: 150px;
+        height: 30px;
+        text-align: center;
+    }
+    
+    #search-button{
+        width: 60px;
+        height: 30px;
+        border: none;
+        border-radius: 15px;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+    }
 }
 
 @media screen and (min-width: 500px){
@@ -82,6 +82,23 @@ body{
         position: relative;
         top: 100px;
         color: white;
+    }
+
+    #search-city{
+        border: none;
+        border-radius: 15px;
+        width: 250px;
+        height: 30px;
+        text-align: center;
+    }
+    
+    #search-button{
+        width: 60px;
+        height: 30px;
+        border: none;
+        border-radius: 15px;
+        transition: .3s ease-in-out;
+        cursor: pointer;
     }
 
     #search-button:hover{
