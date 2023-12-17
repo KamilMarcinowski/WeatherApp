@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", function(){
         city = localStorage.getItem("City");
         if (city === "")
         {
-            city = "Warszawa";
+            city = "Warsaw";
         }
 
         GetWeatherData();
