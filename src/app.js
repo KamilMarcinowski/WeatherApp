@@ -18,13 +18,7 @@ window.addEventListener("DOMContentLoaded", function(){
 
     function Start()
     {
-        if (localStorage.getItem("CityStatus") === false)
-        {
-            city = "London";
-            cityStatus = true;
-            localStorage.setItem("CityStatus", cityStatus);
-        }
-
+        city = localStorage.getItem("City");
 
         console.log(city);
         GetWeatherData();
